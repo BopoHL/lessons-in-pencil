@@ -1,0 +1,46 @@
+:root {
+  --paper: #f8f0e3;
+  --ink: #2e2620;
+  --accent: #a8621a;
+  --muted: #6b5d50;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #1f1b17;
+    --ink: #f1e8da;
+    --accent: #eba03a;
+    --muted: #b3a593;
+  }
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: 17px/1.6 Georgia, "Times New Roman", serif;
+}
+
+main {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 48px 16px 64px;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 1.15rem;
+  margin-top: 2em;
+}
+
+a {
+  color: var(--accent);
+}
+
+.date {
+  color: var(--muted);
+}
